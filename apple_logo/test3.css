@@ -1,0 +1,254 @@
+body {
+  margin: 0 0;
+}
+
+#apple_logo {
+  position: fixed;
+  top: 0px;
+  width: 1100px;
+  margin: 0;
+  margin-left: -200px;
+  z-index: 1;
+}
+
+input[type="checkbox"] {
+  display: none;
+}/* 隐藏复选框 */
+
+#green {
+  height: 50px;
+  width: 50px;
+  border: 1px outset #979797;
+  border-radius: 50px;
+  background-color: #60bb44;
+  position: fixed;
+  top: 180px;
+  left: 910px;
+  cursor: pointer;
+  box-shadow: darkgray 5px 5px 20px 1px;
+}
+#green:hover {
+  filter: saturate(3); 
+}
+#green:active {
+  filter: saturate(0.8); 
+}
+
+#yellow {
+  height: 50px;
+  width: 50px;
+  border: thin outset gray;
+  border-radius: 50px;
+  background-color: #faa925;
+  position: fixed;
+  top: 335px;
+  left: 910px;
+  cursor: pointer;
+  box-shadow: darkgray 5px 5px 20px 1px;
+}
+#yellow:hover {
+  background-color: #fce527;
+}
+#yellow:active {
+  background-color: #d89e23;
+}
+
+#orange {
+  height: 50px;
+  width: 50px;
+  border: thin outset gray;
+  border-radius: 50px;
+  background-color: #f17325;
+  position: fixed;
+  top: 415px;
+  left: 910px;
+  cursor: pointer;
+  box-shadow: darkgray 5px 5px 20px 1px;
+}
+#orange:hover {
+  background-color: #ffa355;
+}
+#orange:active {
+  background-color: #da741d;
+}
+
+#red {
+  height: 50px;
+  width: 50px;
+  border: thin outset gray;
+  border-radius: 50px;
+  background-color: #d13b4d;
+  position: fixed;
+  top: 495px;
+  left: 910px;
+  cursor: pointer;
+  box-shadow: darkgray 5px 5px 20px 1px;
+}
+#red:hover {
+  background-color: #ff0407;
+}
+#red:active {
+  background-color: #cf3a3c;
+}
+
+#purple {
+  height: 50px;
+  width: 50px;
+  border: thin outset gray;
+  border-radius: 50px;
+  background-color: #8a449a;
+  position: fixed;
+  top: 575px;
+  left: 910px;
+  cursor: pointer;
+  box-shadow: darkgray 5px 5px 20px 1px;
+}
+#purple:hover {
+  background-color: #ca52c9;
+}
+#purple:active {
+  background-color: #6d2d6c;
+}
+
+#blue {
+  height: 50px;
+  width: 50px;
+  border: 1px outset gray;
+  border-radius: 50px;
+  background-color: #1393d4;
+  position: fixed;
+  top: 655px;
+  left: 910px;
+  cursor: pointer;
+  box-shadow: darkgray 5px 5px 20px 1px;
+}
+#blue:hover {
+  background-color: #00b6ff;
+}
+#blue:active {
+  background-color: #007fb2;
+}
+
+#box1 {
+  background-color: #60bb44;
+  width: 800px;
+  height: 250px;
+  position: fixed;
+  transition: 1s all;
+  top: -200px;
+  lef1t: -1000px; 
+  border-radius: 0px 150px 70px 0px;
+}
+
+#box2 {
+  background-color: #faa925;
+  width: 800px;
+  height: 80px;
+  position: fixed;
+  transition: 1s all;
+  top: 320px;
+  left: -1000px;
+  border-radius: 0px 50px 200px 0px;
+}
+
+#box3 {
+  background-color: #f17325;
+  width: 800px;
+  height: 80px;
+  position: fixed;
+  transition: 1s all;
+  top: 400px;
+  left: -1000px; 
+}
+
+#box4 {
+  background-color: #d13b4d;
+  width: 820px;
+  height: 80px;
+  position: fixed;
+  transition: 1s all;
+  top: 480px;
+  left: -1000px; 
+  border-radius: 0px 150px 50px 0px;
+}
+
+#box5 {
+  background-color: #8a449a;
+  width: 820px;
+  height: 80px;
+  position: fixed;
+  transition: 1s all;
+  top: 560px;
+  left: -1000px; 
+  border-radius: 0px 15px 150px 0px;
+}
+
+#box6 {
+  background-color: #1393d4;
+  width: 820px;
+  height: 100px;
+  position: fixed;
+  transition: 1s all;
+  top: 640px;
+  left: -1000px; 
+  border-radius: 0px 150px 50px 0px;
+}
+
+input[id="one"]:checked + #box1 {
+  top: 70px;
+}
+
+input[id="two"]:checked + #box2 {
+  left: -0px;  
+}
+
+input[id="three"]:checked + #box3 {
+  left: 0px;
+}
+
+input[id="four"]:checked + #box4 {
+  left: 0px;
+}
+
+input[id="five"]:checked + #box5 {
+  left: 0px;
+}
+
+input[id="six"]:checked + #box6 {
+  left: 0px;
+}
+
+#click {
+  padding: 20px 20px;
+  box-shadow: gray 6px 6px 10px 1px;
+  font-size: 20px;
+  color: black;
+  position: fixed;
+  top: 120px;
+  left: 1030px;
+}
+#click:hover {
+  cursor: pointer;
+}
+
+#jobs {
+  position: fixed;
+  width: 300px;
+  top: 650px;
+  left: 1000px;
+  opacity: 0;
+  transition: 2s all;
+}
+
+#click:hover + #jobs {
+  opacity: 0.7;
+  top: 490px;
+}
+
+#xuesong {
+  position: fixed;
+  top: 415px;
+  left: -400px;
+  opacity: 0;
+  transition: 0.5s all;
+}
